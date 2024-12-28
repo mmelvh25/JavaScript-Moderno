@@ -1,2 +1,2 @@
 # JavaScript-Moderno
-Repositorio creado para aprender reforzar habilidad en javascript
+Repositorio creado para reforzar habilidad en javascript
