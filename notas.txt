@@ -1,0 +1,3 @@
+Polyfill:
+código que provee el funcionamiento de una nueva característica de JS (ES6), en versiones viejas como ES5
+
