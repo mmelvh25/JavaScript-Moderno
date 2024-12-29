@@ -1,3 +1,14 @@
 Polyfill:
 código que provee el funcionamiento de una nueva característica de JS (ES6), en versiones viejas como ES5
 
+Null:
+sin valor en lo absoluto
+
+undefined:
+una variable declarada que aún no se le asigna valor
+
+symbol:
+es un valor único que no es igual a ningún otro valor, ni siquiera a otro symbol igual
+
+-JS cuando lee un archivo, priemro hace un barrido de todo lo que hay en ese archivo,
+obtiene las inicializaciones de las variables y funciones que se existen
