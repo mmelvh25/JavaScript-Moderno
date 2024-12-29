@@ -52,6 +52,7 @@ imprimeArgumentos();
 pero, así se imprimen todos
 esto hace referencia a un PARAM REST, el cual dice que todos los argumentos
 que sean enviados al argumento2 "crea un arreglo con cada uno de ellos";
+"une todos los argumentos en una sola variable y transfórmalos como un arreglo"
 sin embargo,
 con el param REST no puede venir ningún otro param, sino dará error;
 también,
