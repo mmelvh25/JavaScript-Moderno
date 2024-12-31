@@ -9,3 +9,15 @@ si están ejecutando código de JavaScript en el navegador,
 ¿por qué?
 porque cuando ustedes están corriendo JS en el servidor, 
 obviamente ahí no existe el DOM porque no hay elementos HTML, o sea, no hay nada que hacer ahí.
+
+
+sección 6:
+En esta sección tocaremos los siguientes temas:
+
+Patrón módulo
+
+Minimizar el código de forma manual (luego lo haremos de forma automática)
+
+Optimizaciones y protección de código
+
+Esta es una sección que enseña mucho sobre la protección de nuestro código y cómo manipular programas que no usen estos patrones.

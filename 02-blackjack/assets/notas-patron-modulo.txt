@@ -1,0 +1,44 @@
+PATRON MODULO
+es el patrón de diseño más común que existe en JavaScript y por una muy buena razón.
+
+Primera es compatible con casi cualquier versión de JavaScript que venga del script.
+
+Es decir, el JavaScript de arriba del 2000 para acá ya pueden usar este patrón.
+
+Adicionalmente, esto también nos permite una encapsulación de nuestro código y también nos sirve para
+
+proteger el mismo.
+
+Cuando hablamos de la encapsulación es que nuestro código quede como en un contenedor privado.
+
+Es decir, todo el código que tenemos aquí queda en un contenedor, de manera de que nadie afuera va
+
+a poder manipular mis variables y tampoco va a poderlas llamar como nosotros lo hemos estado viendo
+
+directamente aquí en la consola.
+
+SINTAXIS
+
+funcion anonima autoinvocada
+() =>{
+
+}
+si necesito llamar esta funcion inmediatamente después de ser creada, 
+entonces haré esto:
+(() =>{
+
+})();
+es igual a 
+(function(){
+
+})()
+
+lo que hacen es crear un nuevo scope
+dentro de la funcion, el cual no tiene una
+referencia por nombre y no va a ser posible llamar el objeto directamente
+
+--Los paréntesis al último indican que se está llamando la función inmediatamente
+esto es el patrón modulo
+
+
+---se tiene acceso a todas las variables
