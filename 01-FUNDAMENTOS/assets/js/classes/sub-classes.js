@@ -1,4 +1,3 @@
-// todas las clases usan 'use strict' por defecto
 class Persona{
     
     /* se acostumbra poner las propiedades estáticas
@@ -37,14 +36,23 @@ class Persona{
     }
 }
 
-const sujeto = new Persona('LAS', 'hombre enamorado', 'soy un hombre enamorado');
-sujeto.quienSoy();
-sujeto.miFrase();
-sujeto.setComidaFavorita = 'Espaguetis';
-console.log(sujeto);
+class Desconocido extends Persona {
+    clan= 'sin clan';
 
-console.log(sujeto);
+    constructor(nombre, condigo, frase) {
+        super(nombre, condigo, frase);
+        this.clan = 'mi casita';
+    }
 
-// sujeto._conteo = 1;
-console.log('Conteo del sujeto: ', Persona._conteo);
-console.log(Persona._conteo);
+
+    quienSoy(){
+        console.log(`Soy ${this.nombre}, ${this.clan}`);
+        super.quienSoy();
+    }
+}
+ const desconocido = new Desconocido();
+console.log(desconocido);
+desconocido.quienSoy();
+
+
+
