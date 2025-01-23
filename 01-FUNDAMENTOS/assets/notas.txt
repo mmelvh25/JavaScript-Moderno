@@ -3,9 +3,9 @@
 Polyfill: código que provee el funcionamiento de una nueva
 característic de JavaScript(ES6), en versiones viejas como ES5
 
---VAR
+--objeto global window
 todos los var están dentro de un objeto global window
-
+tiene muchas funciones, incluyendo alert(), prompt() y confirm()
 
 --en consola de navegador, los colores signfican algo:
 gris: string
@@ -19,3 +19,17 @@ Para debuggear:
 RUN -> START DEBUGGIG
 2.1 Se puede usar la debug consola: 
 RUN -> START DEBUGGIG -> CLIC A PLAY (TRIANGULO VERDE O AZUL) Y YA SE CARGA EN LA CONSOLA
+
+
+----
+en JS cualquier variable que no esté inicializada, 
+va a tener el valor de undefined, no definido
+
+
+--oBJETOS LITERALES
+objetos que tienen pares de valores
+
+Van a tener una propiedad que es 
+let personaje = {
+    llave= 'Valor de llave'
+};

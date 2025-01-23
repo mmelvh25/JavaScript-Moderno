@@ -18,7 +18,8 @@ function saludar(nombre){  //función tradicional, no muy recomendada
 const saludar2 = function(nombre){  //función anónima
     console.log('Hola ' + nombre);
 } 
-
+el beneficio de una función anónima es que evita que se reutilice el 
+param nombre en la app. Es como una medida de seguridad
 
 */
 
@@ -48,7 +49,8 @@ esto:
 const sumar2 = (a,b) => a + b;
 es lo mismo que esto:
 const sumar2 = (a,b) => {
-    return a + b};
+    return a + b
+};
 
 const getAleatorio = () => Math.random();
 console.log(getAleatorio());

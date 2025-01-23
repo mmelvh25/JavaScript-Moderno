@@ -42,7 +42,7 @@ llamado arguments*/
 function imprimeArgumentos(){
     console.log(arguments);
 }
-imprimeArgumentos();
+imprimeArgumentos(10, true, 'Melanny');
 
 /*
 
@@ -54,7 +54,7 @@ esto hace referencia a un PARAM REST, el cual dice que todos los argumentos
 que sean enviados al argumento2 "crea un arreglo con cada uno de ellos";
 "une todos los argumentos en una sola variable y transfórmalos como un arreglo"
 sin embargo,
-con el param REST no puede venir ningún otro param, sino dará error;
+con el param REST no puede venir ningún otro param después, sino dará error;
 también,
 tomará el primer elemento como parte de un param, ejm:
 
@@ -64,11 +64,17 @@ const imprimeArgumentos2 = (edad,...args) => {
 imprimeArgumentos2(10,true, false, 'Melanny');
 */
 
-const imprimeArgumentos2 = (...args) => { 
+const imprimeArgumentos2 = (edad, ...args) => { 
     return args;
 }
+
+
+// --------------TIP 4----------------------
+/*crear constantes con los valores de imprimeArgumentos2()*/
 const [casado, viudo, nombre, saludo]= imprimeArgumentos2(10,true, false, 'Melanny');
-console.log({casado, viudo, nombre, saludo});
+/*cuando se pone en el log esas llaves {}, lo que hace es crear un objeto con 
+pares de valores para que sea más fácil de ver en la consola*/
+console.log({casado, viudo, nombre, saludo}); 
 /*
 imprime esto 
 {casado: 10, viudo: true, nombre: false, saludo: 'Melanny'}
@@ -78,14 +84,38 @@ saludo: "Melanny"
 viudo: true
  */
 
+/* También se puede hacer lo mismo con objetos. Ejm:
+
+const persona2= crearPersona('Melanny', 'Vargas);
+
+si solo me interesara el apellido:
+const {apellido} = crearPersona('Mel', 'Vargas');
+console.log({apellido});
+
+si se quiere cambiar el nombre de la variable:
+const {apellido: nuevoApellido} = crearPersona('Mel', 'Vargas');
+console.log({nuevoApellido});
+*/
 const {apellido: nuevoApellido} = crearPersona('Mel', 'Vargas');
 console.log({nuevoApellido});
 
 
 /* 
---------------TIP 4----------------------
+--------------TIP 5----------------------
 DESESTRUCTURACIÓN DE ARGUMENTOS
 
 el ejemplo de tony stark en el archivo js del cod fuente
 
 */
+
+const fresita ={
+    nombre: 'Rosita Fresita',
+    edad: 10,
+    alimentos: ['Strawberry shortcake', 'Straberry cheesecake'],
+};
+
+const imprimePropiedades = ({nombre, edad =11}) => {
+    console.log({nombre});
+    console.log({edad});
+}
+imprimePropiedades(fresita);
