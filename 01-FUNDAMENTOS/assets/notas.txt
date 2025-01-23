@@ -1,0 +1,15 @@
+Polyfill: código que provee el funcionamiento de una nueva
+característic de JavaScript(ES6), en versiones viejas como ES5
+
+gris: string
+morado: int o bool
+
+Para debuggear:
+1. desde el navegador
+
+2. desde VS, seleccionando node para que ayude a debuggear.
+RUN -> START DEBUGGIG
+2.1 Se puede usar la debug consola: 
+RUN -> START DEBUGGIG -> CLIC A PLAY (TRIANGULO VERDE O AZUL) Y YA SE CARGA EN LA CONSOLA
+
+todos los var están dentro de un objeto global window
