@@ -12,3 +12,17 @@ es un valor único que no es igual a ningún otro valor, ni siquiera a otro symb
 
 -JS cuando lee un archivo, priemro hace un barrido de todo lo que hay en ese archivo,
 obtiene las inicializaciones de las variables y funciones que se existen
+
+Assets:
+nombre utilizado para indicar que lo que tiene dentro son recursos estáticos en la app,
+es decir, no van a ser removidos y estarán siempre en la carpeta
+
+CONST
+nunca se va a eliminar o manipular directamente
+
+VAR
+todos los var están dentro de un objeto global window
+permite poder reemplazar propiedades y objetos propios del objeto global window
+
+LET
+eventualmente se va a poder borrar o manipular directamente
