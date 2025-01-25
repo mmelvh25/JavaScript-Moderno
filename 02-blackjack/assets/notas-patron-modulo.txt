@@ -1,9 +1,22 @@
-PATRON MODULO
+PATRON MODULO:
+
+const miModulo = ( () => {
+
+    // privado
+
+    // público 
+    return {
+
+    }
+
+})();
+
+
 es el patrón de diseño más común que existe en JavaScript y por una muy buena razón.
 
-Primera es compatible con casi cualquier versión de JavaScript que venga del script.
+Primero, es compatible con casi cualquier versión de JavaScript.
 
-Es decir, el JavaScript de arriba del 2000 para acá ya pueden usar este patrón.
+Es decir, desde el JavaScript de arriba del 2000 para acá ya pueden usar este patrón.
 
 Adicionalmente, esto también nos permite una encapsulación de nuestro código y también nos sirve para
 
@@ -13,9 +26,7 @@ Cuando hablamos de la encapsulación es que nuestro código quede como en un con
 
 Es decir, todo el código que tenemos aquí queda en un contenedor, de manera de que nadie afuera va
 
-a poder manipular mis variables y tampoco va a poderlas llamar como nosotros lo hemos estado viendo
-
-directamente aquí en la consola.
+a poder manipular las variables y tampoco va a poder llamarlas desde la consola.
 
 SINTAXIS
 
@@ -29,7 +40,7 @@ entonces haré esto:
 
 })();
 es igual a 
-(function(){
+(function () {
 
 })()
 
