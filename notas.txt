@@ -1,3 +1,5 @@
+------GLOSARIO---------
+
 Polyfill:
 código que provee el funcionamiento de una nueva característica de JS (ES6), en versiones viejas como ES5
 
@@ -17,12 +19,28 @@ Assets:
 nombre utilizado para indicar que lo que tiene dentro son recursos estáticos en la app,
 es decir, no van a ser removidos y estarán siempre en la carpeta
 
-CONST
+CONST:
 nunca se va a eliminar o manipular directamente
 
-VAR
+VAR:
 todos los var están dentro de un objeto global window
 permite poder reemplazar propiedades y objetos propios del objeto global window
 
-LET
+LET:
 eventualmente se va a poder borrar o manipular directamente
+
+DOM:
+conjunto de objetos anidados para crear un documento HTML.
+También aplica al XML.
+permite tener acceso dinánimo a través de programación a sus elementos
+y poder manipularlos.
+toda etiqueta en html puede ser manipulada con el DOM.
+Se hace utilizando unas sentencias especiales que solo van a funcionar
+si están ejecutando código de JavaScript en el navegador, 
+¿por qué?
+porque cuando se está corriendo JS en el servidor, 
+obviamente ahí no existe el DOM porque no hay elementos HTML, o sea, no hay nada que hacer ahí.
+
+CALLBACK:
+Función que se está mandando como argumento de otra función. 
+Puede ser una función traducional o una de flecha
