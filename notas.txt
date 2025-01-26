@@ -44,3 +44,16 @@ obviamente ahí no existe el DOM porque no hay elementos HTML, o sea, no hay nad
 CALLBACK:
 Función que se está mandando como argumento de otra función. 
 Puede ser una función traducional o una de flecha
+
+-MIN:
+sufijo estándar
+archivos compactados, comprimidos, minimizado (minify) 
+y listo para producción
+    existen páginas, extensiones VC, programas....
+    javascript-minifier.com
+En el caso de querer cambiar algo, no se toca este archivo. 
+Sino, el archivo con el mismo nombre pero sin sufijo, 
+    Ejemplo:
+    juego-min.js ---> archivo con sufijo estándar para producción
+    juego.js ---> archivo para desarrollo
+Si están ubicados en el mismo proyecto, el archivo-min es el que leerá el navegador, su contraparte de desarrollo no.

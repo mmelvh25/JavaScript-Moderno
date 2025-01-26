@@ -7,6 +7,9 @@ const miModulo = ( () => {
     // público 
     return {
 
+            // lo que se retorne aquí será lo único público de este patrón
+            // y solo será accedido desde miModulo()
+     
     }
 
 })();
@@ -33,13 +36,16 @@ SINTAXIS
 funcion anonima autoinvocada
 () =>{
 
+
+    return{};
 }
 si necesito llamar esta funcion inmediatamente después de ser creada, 
 entonces haré esto:
 (() =>{
 
 })();
-es igual a 
+
+que es igual a 
 (function () {
 
 })()
@@ -49,7 +55,18 @@ dentro de la funcion, el cual no tiene una
 referencia por nombre y no va a ser posible llamar el objeto directamente
 
 --Los paréntesis al último indican que se está llamando la función inmediatamente
-esto es el patrón modulo
+esto es lo que hace el patrón modulo: confidencialidad y seguridad
 
 
 ---se tiene acceso a todas las variables
+
+
+OTROS PUNTOS:
+
+/*
+   'use strict' indica a JS que evalúe estrictamente el código, 
+   ayuda a que el código sea más limpio.
+   Es recomendado usarla con funciones anónimas autoinvocadas y el patrón módulo
+   para evitar problemas y errores frecuentes
+*/ 
+
