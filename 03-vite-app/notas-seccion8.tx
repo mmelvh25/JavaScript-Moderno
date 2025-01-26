@@ -1,4 +1,0 @@
-devDependencies
-    son dependencias únicamente que son necesarias para construir la app
-    Una vez construida, el código solo usará las dependencias de producción
-

@@ -57,3 +57,7 @@ Sino, el archivo con el mismo nombre pero sin sufijo,
     juego-min.js ---> archivo con sufijo estándar para producción
     juego.js ---> archivo para desarrollo
 Si están ubicados en el mismo proyecto, el archivo-min es el que leerá el navegador, su contraparte de desarrollo no.
+
+devDependencies:
+    son dependencias que únicamente son necesarias para construir la app
+    Una vez construida, el código solo usará las dependencias de producción
