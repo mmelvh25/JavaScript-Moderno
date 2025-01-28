@@ -13,6 +13,6 @@ class Rectangulo{
 }
 
 const rectangulo = new Rectangulo(10, 15);
-rectangulo.#area = 90;
+rectangulo.#area = 90; //a como se ve, no se puede modificar fuera de la clase
 rectangulo.calcularArea();
 console.log(rectangulo);

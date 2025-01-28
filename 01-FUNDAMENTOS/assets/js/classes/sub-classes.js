@@ -39,18 +39,22 @@ class Persona{
 class Desconocido extends Persona {
     clan= 'sin clan';
 
-    constructor(nombre, condigo, frase) {
-        super(nombre, condigo, frase);
-        this.clan = 'mi casita';
+    constructor(nombre, codigo, frase) {
+        /*se debe llamar al constructor super (constructor del padre ) en clases derivadas (como esta)
+            antes de acceder a cualquier propiedad que use 'this'
+        */
+        super(nombre, codigo, frase);//esto primero
+        this.clan = 'mi casita';//esto después del super
     }
 
 
     quienSoy(){
         console.log(`Soy ${this.nombre}, ${this.clan}`);
+        //si se quiere llamar algo de la clase padre, se usa super
         super.quienSoy();
     }
 }
- const desconocido = new Desconocido();
+const desconocido = new Desconocido();
 console.log(desconocido);
 desconocido.quienSoy();
 

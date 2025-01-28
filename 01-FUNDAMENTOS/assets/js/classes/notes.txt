@@ -1,0 +1,9 @@
+esta carpeta se trabajó en este orden. 
+Si se quiere entender su código y notas, revisar en este orden:
+
+1. problema.js
+2. class.js
+3. sub-classes (herencia)
+4. esnext.js (propiedades privadas)
+5. singleton
+6. constructores-multiples
