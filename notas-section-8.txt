@@ -1,0 +1,53 @@
+FUNCIÓN GENERADORA
+función que va regresando paulatinamente
+los valor de uno después del otro
+
+
+BUNDLERS (empaquetadores)
+ayudan a poder desarrollar una app de JS moderna,
+es decir, con módulos, separando archivos,
+que cada archivo tenga una responsabilidad única, que nosotros podamos 
+importar diferentes tipos de tecnologias que podamos usar,
+sass o estilos de css, y todo combinarlo, ejecutarlo y crear un resultado final 
+como app lista para producción.
+funciona para proyectos que se están modificando activamente
+--->Flujo y objetivo: Todos los archivos de desarrollo se pasan por el bundler y se genera 
+el build de producción 
+
+--->Pasos extra: 
+    - pasarlo por Babbel (transpilación o conversión) que permite escribir código actual de JS y transformarlo a código de cualquier otra versión de JS
+
+---> Herramientas:
+    - Webpack (popular pero su uso va bajando): no permite acelerar el proceso de desarrollo actual porque 
+    genera de nuevo los módulos cada vez que se edita el proyecto
+    - Vite : más rápido que Webpack porque cambia los módulos a caliente
+    -TurboPack: sucesor de Webpack 
+
+
+DIFERENCIA ENTRE DEPENDENCIES Y DEVDEPENDENCIES
+
+
+PACKAGE-LOCK.json
+archivo que nunca se toca manualmente
+indica a npm cómo fueron construidos los módulos de Node
+
+PACKAGE.json
+archivo de una aplicación de Node
+
+MÓDULOS DE NODE (node_modules folder)
+son los que ayudan a trabajar en la app de desarrollo y 
+ahí estarán las dependencias que se ocuparán para cuando
+se construya la app
+
+
+COMANDOS
+    npm create vite  --> crea la app vite 
+
+    npm i            --> instala los módulos de node
+
+    npm run dev     ---> irá al package.json (npm run) y corre el script indicado (dev) que está dentro del nodo "scripts"
+
+    npm run build   ---> irá al package.json (npm run) y corre el script indicado (build) que está dentro del nodo "scripts". 
+                         Genera el build de producción (carpeta llamada "dist") con archivos minificados y con nombres con hash para actualizar caché de navegadores
+                         La carpeta dist es la que se despliega en producción
+

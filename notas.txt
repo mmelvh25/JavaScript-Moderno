@@ -64,7 +64,8 @@ Si están ubicados en el mismo proyecto, el archivo-min es el que leerá el nave
 
 DEVDEPENDENCIES (devDependencies):
     son dependencias que únicamente son necesarias para construir la app
-    Una vez construida, el código solo usará las dependencias de producción
+    Una vez construida, el código solo usará las dependencias (dependencies) de producción
+    dentro de archivo package.json
 
 
 
@@ -100,6 +101,12 @@ la misma variable array pero cambiando el índice de ubicación según se necesi
     const HTMLPoints =  document.querySelectorAll('small');
     HTMLPoints[0].innerText = playerPoints; //aquí se manipula el primer small del html
 
-**También aplica con clases y otros elementos
+*También aplica con clases y otros elementos
 --------------------------------------------------------------------------------------------------------------------------
 
+npm ---> node package manager
+
+
+MÓDULO
+agrupación/empaquetación de alguna funcionalidad, 
+o archivo independiente que hace alguna tarea
